@@ -6,6 +6,7 @@
         "ext-libevent": "*",
         "ext-curl": "*",
         "ext-amqp": "*",
+	"ext-ssh2": "*",
         "ext-sundown": "*"
     },
     "extra": {
