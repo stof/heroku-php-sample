@@ -7,6 +7,7 @@
         "ext-curl": "*",
         "ext-amqp": "*",
 	"ext-ssh2": "*",
+        "ext-ftp": "*",
         "ext-sundown": "*"
     },
     "extra": {
