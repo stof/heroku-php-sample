@@ -4,9 +4,13 @@
 
 Create a new Heroku app:
 
-    heroku apps:create <name> --buildpack https://github.com/CHH/heroku-buildpack-php
+```bash
+$ heroku create <name> --buildpack heroku/php
+$ heroku config:set HEROKU_PHP_PLATFORM_REPOSITORIES=https://incenteev-heroku-php-exts.s3.amazonaws.com/dist-cedar-14-develop/packages.json
+```
 
 Deploy:
 
-    git push heroku master
-
+```bash
+$ git push heroku master
+```

@@ -1,0 +1,16 @@
+{
+    "name": "Test application for the heroku buildpack",
+    "keywords": [
+        "php",
+        "symfony"
+    ],
+    "repository": "https://github.com/stof/heroku-php-sample",
+    "success_url": "/",
+    "env": {
+        "HEROKU_PHP_PLATFORM_REPOSITORIES": "https://incenteev-heroku-php-exts.s3.amazonaws.com/dist-cedar-14-develop/packages.json"
+    },
+    "addons": [
+        "heroku-postgresql"
+    ],
+    "image": "heroku/php"
+}

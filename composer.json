@@ -1,32 +1,9 @@
 {
     "require": {
-        "php": ">=5.3.0",
-        "silex/silex": "~1.0@dev",
+        "php": "7.0.*",
+        "silex/silex": "~1.0",
         "chh/cache-service-provider": "~1.0",
-        "ext-libevent": "*",
         "ext-curl": "*",
-        "ext-amqp": "*",
-	"ext-ssh2": "*",
-        "ext-ftp": "*",
-        "ext-sundown": "*"
-    },
-    "extra": {
-        "heroku": {
-            "document-root": "web",
-            "index-document": "index.php",
-            "php-config": [
-                "short_open_tag=on",
-                "date.timezone=Europe/Vienna",
-                "newrelic.appname=php-test"
-            ],
-            "engines": {
-                "php": "5.6.*",
-                "nginx": "1.8.*"
-            },
-            "compile": [
-                "echo $FOO"
-            ],
-            "newrelic": true
-        }
+        "ext-ftp": "*"
     }
 }

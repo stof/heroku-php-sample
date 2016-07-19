@@ -5,13 +5,9 @@ require(__DIR__ . '/../vendor/autoload.php');
 $app = new \Silex\Application;
 $app['debug'] = false;
 
-if ($app['debug']) {
-    $app->register(new Whoops\Provider\Silex\WhoopsServiceProvider);
-}
-
 $app->register(new CHH\Silex\CacheServiceProvider, array(
     'cache.options' => array(
-        'default' => array('driver' => 'apc')
+        'default' => array('driver' => 'apcu')
     )
 ));
 
