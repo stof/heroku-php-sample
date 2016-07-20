@@ -4,6 +4,7 @@
         "silex/silex": "~1.0",
         "chh/cache-service-provider": "~1.0",
         "ext-curl": "*",
+        "ext-amqp": "*",
         "ext-ftp": "*"
     }
 }
